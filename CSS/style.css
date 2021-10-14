@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 30px;
+  margin-top: 10px;
+  text-decoration: dashed;
+}
+
+section.layoutPontoVenda {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #3777a1;
+  border-radius: 5px;
+  width: 900px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 10px 10px 0px #2f658a96;
+}
+
+section button#incluir, button#mostResm {
+  font-size: 13px;
+  background-color: white;
+  border: none;
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+section button#incluir:active, button#mostResm:active{
+  background-color: rgb(228, 228, 228);
+}
+
+.prodFormGrid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 20px 20px;
+  column-gap: 2.1em;
+  row-gap: 5px;
+}
+
+.prodFormGrid label {
+  font-size: 20px;
+  grid-row: 1;
+}
+
+.prodFormGrid input {
+  height: 25px;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 3px;
+  padding-left: 5px;
+  outline: none;
+}
+
+.prodFormGrid input:focus {
+  background-color: rgb(243, 243, 252);
+}
+
+section hr {
+  border: 1px solid #313131;
+}
+
+div.vendaListaDiv h2 {
+  margin-left: 20px;
+  margin-bottom: 10px;
+} 
+
+div table#vendaLista{
+  padding-left: 50px;
+  margin-bottom: 10px;
+}
+
+div table#vendaLista button{
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: rgb(199, 32, 32);
+  padding: 5px;
+  margin-bottom: 3px;
+  border: none;
+  border-radius: 3px;
+}
+
+div table#vendaLista button:active {
+  background-color: rgb(153, 24, 24);
+}
+
+div#resumoVendas {
+  width: 100%;
+  text-align: center;
+}
+
+div.resumoVenda {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20px 20px;
+  row-gap: 0.5em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+div.resumoVenda span {
+  font-weight: bolder;
+  color: rgb(255, 230, 0);
+}
+
+div.msgErro {
+  color: rgb(223, 37, 37);
+  background-color: whitesmoke;
+  width: 100%;
+}
+
+div.msgErro p {
+  padding: 5px;
+}

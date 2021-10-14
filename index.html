@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 05 | Autoria Web</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="JS/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Ponto de Venda - Felipe Marques de Stefano</h1>
+  </header>
+  <section class="layoutPontoVenda">
+    <div>
+      <form class="prodFormGrid">
+        <label id="prodForm itemProdNome">Produto:</label>
+        <input type="text" name="prodNome" id="prodNome" onblur="preIncluir()">
+        <label id="prodForm itemProdQtd">Quantidade:</label>
+        <input type="text" name="prodQtd" id="prodQtd" onblur="valorCalc()" onblur="preIncluir()">
+        <label id="prodForm itemProdPreco">Preço(Unit R$):</label>
+        <input type="text" name="prodPreco" id="prodPreco" onblur="valorCalc()" onblur="preIncluir()">
+        <label id="prodForm itemProdVlor">Valor:</label>
+        <input type="text" name="prodValor" id="prodValor" readonly>
+      </form>
+      <button type="button" id="incluir" onclick="add()">Incluir</button>
+    </div>
+    <hr>
+    <div class="vendaListaDiv">
+      <h2>VENDAS</h2>
+      <table id="vendaLista">
+        <ol>
+          
+        </ol>
+      </table>
+    </div>
+    <hr>
+    <div id="resumoVendas">
+      <button type="button" id="mostResm" onclick="mostrarResumoVenda()">Mostrar Resumo da Venda</button>
+    </div>
+    <div class="resumoVenda">
+      <p id="resumoVenda qtdVendida"></p>
+      <p id="resumoVenda valorPagar"></p>
+      <p id="resumoVenda maisCaro"></p>
+      <p id="resumoVenda maisBarato"></p>
+    </div>
+    <div class="msgErro">
+      <p id="msgErro"> ▶ </p>
+    </div>
+  </section>
+</body>
+
+</html>
